@@ -1,0 +1,34 @@
+# Xcode build directory
+build/
+DerivedData/
+
+# SPM
+.swiftpm/
+.build/
+
+# Xcode
+*.xcworkspace
+
+# Xcode user settings
+xcuserdata/
+
+# Xcode scheme management
+*.xcscmblueprint
+xcshareddata/
+
+# Xcode debugging files
+*.xcdebugger/
+
+# Xcode archives
+*.xcarchive
+
+# macOS metadata
+.DS_Store
+
+# Vim swap and session files
+*.swp
+Session.vim
+
+# Fastlane
+fastlane/.env
+fastlane/report.xml

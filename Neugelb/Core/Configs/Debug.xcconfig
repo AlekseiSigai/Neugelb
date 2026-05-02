@@ -1,0 +1,8 @@
+//
+//  Debug.xcconfig
+//  Neugelb
+//
+//  Created by Aleksei Sigai on 02.05.26.
+//
+
+#include "Common.xcconfig"
