@@ -35,7 +35,7 @@ public extension Routing {
 
 public final class Router: Routing {
      
-    // MARK: - Properties
+    // MARK: Properties
     
     public static let shared = Router()
     
@@ -59,19 +59,17 @@ public final class Router: Routing {
         }
     }
     
-    // MARK: - Private properties
+    // MARK: Private properties
     
     private let logger = Logger(subsystem: "Routing", category: "")
     
-    // MARK: - Init
+    // MARK: Initializer
     
     private init() { }
     
-    // MARK: - Functions
+    // MARK: Functions
     
     public func rootView<Content: View>(_ view: Content, for tab: Tab) -> AnyView {
-        logger.log("Routing: Root view of tab \(tab.rawValue) was configured")
-        
         return AnyView(RouterView(view, tab: tab))
     }
     
@@ -124,7 +122,7 @@ public final class Router: Routing {
         }
     }
     
-    // MARK: - Private functions
+    // MARK: Private functions
     
     private func navigationPathWasUpdated(tab: Tab,
                                           count: Int,

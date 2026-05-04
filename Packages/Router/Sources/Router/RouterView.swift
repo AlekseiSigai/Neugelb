@@ -9,13 +9,13 @@ import SwiftUI
 
 struct RouterView<Content: View>: View {
 
-    // MARK: - Private properties
+    // MARK: Private properties
 
     @StateObject private var router = Router.shared
     private let tab: Router.Tab
     private let content: Content
 
-    // MARK: - Init
+    // MARK: Initializer
 
     init(_ content: Content,
          tab: Router.Tab
@@ -24,7 +24,7 @@ struct RouterView<Content: View>: View {
         self.tab = tab
     }
 
-    // MARK: - Body
+    // MARK: Body
 
     var body: some View {
         NavigationStack(path: navigationPath(of: tab)) {
