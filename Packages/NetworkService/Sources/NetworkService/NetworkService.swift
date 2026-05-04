@@ -26,7 +26,7 @@ public final class NetworkService: NetworkServiceProtocol {
     
     private let requestFactory = RequestFactory()
     
-    // MARK: Initialization
+    // MARK: Initializer
     
     private init() {}
     

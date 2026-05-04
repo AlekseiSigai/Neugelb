@@ -18,4 +18,8 @@ struct AppConfig {
     
     static let apiVersion = 3
     static let apiToken = String.empty
+    
+    enum KeychainKeys: String {
+        case token
+    }
 }
