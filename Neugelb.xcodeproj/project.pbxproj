@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0387E9722FA8C949004D0C7F /* Router in Frameworks */ = {isa = PBXBuildFile; productRef = 0387E9712FA8C949004D0C7F /* Router */; };
 		03A091592FA6B3F600FC8E6C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 03A091582FA6B3F600FC8E6C /* PrivacyInfo.xcprivacy */; };
 		03A091762FA7BCD500FC8E6C /* NetworkService in Frameworks */ = {isa = PBXBuildFile; productRef = 03A091752FA7BCD500FC8E6C /* NetworkService */; };
 		03A091792FA7C46900FC8E6C /* NGFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 03A091782FA7C46900FC8E6C /* NGFoundation */; };
@@ -76,6 +77,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03A091792FA7C46900FC8E6C /* NGFoundation in Frameworks */,
+				0387E9722FA8C949004D0C7F /* Router in Frameworks */,
 				03A091762FA7BCD500FC8E6C /* NetworkService in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,6 +152,7 @@
 			packageProductDependencies = (
 				03A091752FA7BCD500FC8E6C /* NetworkService */,
 				03A091782FA7C46900FC8E6C /* NGFoundation */,
+				0387E9712FA8C949004D0C7F /* Router */,
 			);
 			productName = Neugelb;
 			productReference = 032902B82FA565DA00604615 /* Neugelb.app */;
@@ -236,6 +239,7 @@
 			packageReferences = (
 				03E680432FA685DF000AACEA /* XCLocalSwiftPackageReference "Packages/NetworkService" */,
 				03A091772FA7C15A00FC8E6C /* XCLocalSwiftPackageReference "Packages/NGFoundation" */,
+				0387E92D2FA8C5FF004D0C7F /* XCLocalSwiftPackageReference "Packages/Router" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 032902B92FA565DA00604615 /* Products */;
@@ -646,6 +650,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
+		0387E92D2FA8C5FF004D0C7F /* XCLocalSwiftPackageReference "Packages/Router" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/Router;
+		};
 		03A091772FA7C15A00FC8E6C /* XCLocalSwiftPackageReference "Packages/NGFoundation" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = Packages/NGFoundation;
@@ -657,6 +665,11 @@
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0387E9712FA8C949004D0C7F /* Router */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0387E92D2FA8C5FF004D0C7F /* XCLocalSwiftPackageReference "Packages/Router" */;
+			productName = Router;
+		};
 		03A091752FA7BCD500FC8E6C /* NetworkService */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 03E680432FA685DF000AACEA /* XCLocalSwiftPackageReference "Packages/NetworkService" */;
