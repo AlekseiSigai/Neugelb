@@ -24,6 +24,9 @@ struct HomeScreen<ViewModel: HomeViewModelProtocol>: View {
                         .onAppear {
                             viewModel.fetchMoreMoviesIfNeeded(afterID: movie.id)
                         }
+                        .onTapGesture {
+                            viewModel.routeToDetails(movie: movie)
+                        }
                 }
             }
         }

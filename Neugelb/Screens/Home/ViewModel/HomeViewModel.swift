@@ -15,6 +15,7 @@ protocol HomeViewModelProtocol: ObservableObject, MovieCellViewModelProtocol {
     var movies: [UpcomingResponse.Movie] { get }
     func loadFirstMovies()
     func fetchMoreMoviesIfNeeded(afterID displayMovieID: Int)
+    func routeToDetails(movie: UpcomingResponse.Movie)
 }
 
 protocol MovieCellViewModelProtocol {
@@ -89,6 +90,10 @@ final class HomeViewModel: HomeViewModelProtocol {
             
             movies.append(contentsOf: response.results)
         }
+    }
+    
+    func routeToDetails(movie: UpcomingResponse.Movie) {
+        router.routeToDetails(movie: movie)
     }
 }
 
