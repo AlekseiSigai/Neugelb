@@ -6,6 +6,7 @@
 //
 
 enum ScreenID: String {
+    case details
     case home
     case settings
     case tokenUpdate

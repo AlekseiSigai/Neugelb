@@ -9,7 +9,6 @@ An iOS application that displays movies using the TMDB API.
 * 📃 Latest movies list
 * 🔄 Infinite scrolling (pagination)
 * 🎬 Movie details screen (overview, images, trailers)
-* 🔍 Search with autocomplete suggestions
 
 ---
 

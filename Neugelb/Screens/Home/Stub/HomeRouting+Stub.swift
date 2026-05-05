@@ -6,5 +6,5 @@
 //
 
 struct HomeRoutingStub: HomeRouting {
-
+    func routeToDetails(movie: UpcomingResponse.Movie) { }
 }

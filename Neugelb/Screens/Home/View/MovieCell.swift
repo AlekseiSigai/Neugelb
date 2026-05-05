@@ -42,7 +42,7 @@ struct MovieCell<ViewModel: MovieCellViewModelProtocol>: View {
                 Text("Rating: \(movie.voteAverage, specifier: "%.1f")")
                     .font(.custom(type: .regular, size: .pt17))
                 if let date = (viewModel.normalizedDate(movie.releaseDate)) {
-                    Text("In cinemas from \(date)")
+                    Text("From \(date)")
                         .font(.custom(type: .regular, size: .pt17))
                 }
             }
@@ -58,22 +58,3 @@ struct MovieCell<ViewModel: MovieCellViewModelProtocol>: View {
     MovieCell(viewModel: MovieCellViewModelStub(),
               movie: UpcomingResponse.Movie.Stub.movie1)
 }
-
-
-
-//UpcomingResponse.Movie(
-//    adult: false,
-//    backdropPath: "/7bWxAsNPv9CXHOhZbJVlj2KxgfP.jpg",
-//    genreIds: [27,53],
-//    id: 713704,
-//    originalLanguage: "en",
-//    originalTitle: "Evil Dead Rise",
-//    overview: "Two sisters find an ancient vinyl that gives birth to bloodthirsty demons that run amok in a Los Angeles apartment building and thrusts them into a primal battle for survival as they face the most nightmarish version of family imaginable.",
-//    popularity: 1696.367,
-//    posterPath: "/mIBCtPvKZQlxubxKMeViO2UrP3q.jpg",
-//    releaseDate: "2023-04-12",
-//    title: "Evil Dead Rise",
-//    video: false,
-//    voteAverage: 7,
-//    voteCount: 207
-//),
