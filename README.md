@@ -37,9 +37,21 @@ The project uses `.xcconfig` files for:
 git clone https://github.com/AlekseiSigai/Neugelb.git
 ```
 
-### 2. Run
+### 2. Token
+
+Get token on the web site https://developer.themoviedb.org/reference/getting-started
+
+### 3. Run
 
 Open the project in Xcode and run on iPhone simulator or device.
+
+### 4. Save token
+
+Save your token on Settings screen
+
+### 5. Open Home screen
+
+Open Home screen to choose the best movie for the next weekend!
 
 ---
 

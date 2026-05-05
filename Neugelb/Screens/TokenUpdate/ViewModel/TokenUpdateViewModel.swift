@@ -7,6 +7,7 @@
 
 import Combine
 import Foundation
+import os.log
 
 @MainActor
 protocol TokenUpdateViewModelProtocol: ObservableObject {
@@ -20,6 +21,7 @@ final class TokenUpdateViewModel: TokenUpdateViewModelProtocol {
     
     private let keychainManager: KeychainManaging
     private let router: TokenUpdateRouting
+    private let logger = Logger(subsystem: AppConfig.subsystem, category: "TokenUpdateViewModel")
     
     // MARK: Initializer
 
@@ -38,7 +40,7 @@ final class TokenUpdateViewModel: TokenUpdateViewModelProtocol {
                 try await keychainManager.upsertString(token, forKey: AppConfig.KeychainKeys.token.rawValue)
                 router.routeToRoot()
             } catch  {
-                print(error.localizedDescription)
+                logger.error("\(error.localizedDescription)")
             }
         }
     }

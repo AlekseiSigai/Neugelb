@@ -7,4 +7,4 @@
 
 #include "Common.xcconfig"
 
-BASE_URL = "api.themoviedb.org"
+BASE_URL = api.themoviedb.org
