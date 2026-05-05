@@ -6,3 +6,5 @@
 //
 
 #include "Common.xcconfig"
+
+BASE_URL = api.themoviedb.org

@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0304260F2FA9536100BBE5DA /* NeugelbUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0304260E2FA9536100BBE5DA /* NeugelbUI */; };
+		0387E9722FA8C949004D0C7F /* Router in Frameworks */ = {isa = PBXBuildFile; productRef = 0387E9712FA8C949004D0C7F /* Router */; };
+		03A091592FA6B3F600FC8E6C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 03A091582FA6B3F600FC8E6C /* PrivacyInfo.xcprivacy */; };
+		03A091762FA7BCD500FC8E6C /* NetworkService in Frameworks */ = {isa = PBXBuildFile; productRef = 03A091752FA7BCD500FC8E6C /* NetworkService */; };
+		03A091792FA7C46900FC8E6C /* NGFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 03A091782FA7C46900FC8E6C /* NGFoundation */; };
 		03E6803E2FA6513E000AACEA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 03E6803D2FA6513E000AACEA /* README.md */; };
-		03E680422FA654C8000AACEA /* LICENSE in Sources */ = {isa = PBXBuildFile; fileRef = 03E680412FA654C3000AACEA /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,13 +36,27 @@
 		032902B82FA565DA00604615 /* Neugelb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neugelb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		032902C52FA565DB00604615 /* NeugelbTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeugelbTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		032902CF2FA565DB00604615 /* NeugelbUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeugelbUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03A091582FA6B3F600FC8E6C /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		03E6803D2FA6513E000AACEA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		03E680412FA654C3000AACEA /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		03E680452FA6B1BE000AACEA /* Exceptions for "Neugelb" folder in "Neugelb" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 032902B72FA565DA00604615 /* Neugelb */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		032902BA2FA565DA00604615 /* Neugelb */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				03E680452FA6B1BE000AACEA /* Exceptions for "Neugelb" folder in "Neugelb" target */,
+			);
 			path = Neugelb;
 			sourceTree = "<group>";
 		};
@@ -59,6 +77,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03A091792FA7C46900FC8E6C /* NGFoundation in Frameworks */,
+				0304260F2FA9536100BBE5DA /* NeugelbUI in Frameworks */,
+				0387E9722FA8C949004D0C7F /* Router in Frameworks */,
+				03A091762FA7BCD500FC8E6C /* NetworkService in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,11 +104,13 @@
 		032902AF2FA565DA00604615 = {
 			isa = PBXGroup;
 			children = (
+				03A091582FA6B3F600FC8E6C /* PrivacyInfo.xcprivacy */,
 				03E6803D2FA6513E000AACEA /* README.md */,
 				03E680412FA654C3000AACEA /* LICENSE */,
 				032902BA2FA565DA00604615 /* Neugelb */,
 				032902C82FA565DB00604615 /* NeugelbTests */,
 				032902D22FA565DB00604615 /* NeugelbUITests */,
+				03A091742FA7BCD500FC8E6C /* Frameworks */,
 				032902B92FA565DA00604615 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,6 +123,13 @@
 				032902CF2FA565DB00604615 /* NeugelbUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		03A091742FA7BCD500FC8E6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +152,10 @@
 			);
 			name = Neugelb;
 			packageProductDependencies = (
+				03A091752FA7BCD500FC8E6C /* NetworkService */,
+				03A091782FA7C46900FC8E6C /* NGFoundation */,
+				0387E9712FA8C949004D0C7F /* Router */,
+				0304260E2FA9536100BBE5DA /* NeugelbUI */,
 			);
 			productName = Neugelb;
 			productReference = 032902B82FA565DA00604615 /* Neugelb.app */;
@@ -204,6 +239,12 @@
 			);
 			mainGroup = 032902AF2FA565DA00604615;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				03E680432FA685DF000AACEA /* XCLocalSwiftPackageReference "Packages/NetworkService" */,
+				03A091772FA7C15A00FC8E6C /* XCLocalSwiftPackageReference "Packages/NGFoundation" */,
+				0387E92D2FA8C5FF004D0C7F /* XCLocalSwiftPackageReference "Packages/Router" */,
+				0304260D2FA94F6F00BBE5DA /* XCLocalSwiftPackageReference "Packages/NeugelbUI" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 032902B92FA565DA00604615 /* Products */;
 			projectDirPath = "";
@@ -222,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03E6803E2FA6513E000AACEA /* README.md in Resources */,
+				03A091592FA6B3F600FC8E6C /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,7 +288,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03E680422FA654C8000AACEA /* LICENSE in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +455,7 @@
 				DEVELOPMENT_TEAM = SH5AK942XZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Neugelb/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -450,6 +492,7 @@
 				DEVELOPMENT_TEAM = SH5AK942XZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Neugelb/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -609,6 +652,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		0304260D2FA94F6F00BBE5DA /* XCLocalSwiftPackageReference "Packages/NeugelbUI" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/NeugelbUI;
+		};
+		0387E92D2FA8C5FF004D0C7F /* XCLocalSwiftPackageReference "Packages/Router" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/Router;
+		};
+		03A091772FA7C15A00FC8E6C /* XCLocalSwiftPackageReference "Packages/NGFoundation" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/NGFoundation;
+		};
+		03E680432FA685DF000AACEA /* XCLocalSwiftPackageReference "Packages/NetworkService" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/NetworkService;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0304260E2FA9536100BBE5DA /* NeugelbUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0304260D2FA94F6F00BBE5DA /* XCLocalSwiftPackageReference "Packages/NeugelbUI" */;
+			productName = NeugelbUI;
+		};
+		0387E9712FA8C949004D0C7F /* Router */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0387E92D2FA8C5FF004D0C7F /* XCLocalSwiftPackageReference "Packages/Router" */;
+			productName = Router;
+		};
+		03A091752FA7BCD500FC8E6C /* NetworkService */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03E680432FA685DF000AACEA /* XCLocalSwiftPackageReference "Packages/NetworkService" */;
+			productName = NetworkService;
+		};
+		03A091782FA7C46900FC8E6C /* NGFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03A091772FA7C15A00FC8E6C /* XCLocalSwiftPackageReference "Packages/NGFoundation" */;
+			productName = NGFoundation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 032902B02FA565DA00604615 /* Project object */;
 }

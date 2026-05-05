@@ -11,7 +11,7 @@ import SwiftUI
 struct NeugelbApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainFactory.create()
         }
     }
 }
