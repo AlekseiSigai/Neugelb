@@ -8,6 +8,8 @@
 extension HomeViewModel {
     @MainActor
     struct Stub {
-        static let viewModel = HomeViewModel(router: HomeRoutingStub())
+        static let viewModel = HomeViewModel(networkService: UpcomingMoviesFetchingStub(),
+                                             keychainManager: KeychainManager.Stub.Manager(),
+                                             router: HomeRoutingStub())
     }
 }

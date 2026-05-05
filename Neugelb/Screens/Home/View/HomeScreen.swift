@@ -16,8 +16,22 @@ struct HomeScreen<ViewModel: HomeViewModelProtocol>: View {
     // MARK: Body
     
     var body: some View {
-        EmptyView()
-            .navigationTitle("Home")
+        ScrollView {
+            LazyVStack {
+                ForEach(viewModel.movies) { movie in
+                    MovieCell(viewModel: viewModel,
+                              movie: movie)
+                        .onAppear {
+                            viewModel.fetchMoreMoviesIfNeeded(afterID: movie.id)
+                        }
+                }
+            }
+        }
+        .padding(16)
+        .onAppear {
+            viewModel.loadFirstMovies()
+        }
+        .navigationTitle("Home")
     }
 }
 
